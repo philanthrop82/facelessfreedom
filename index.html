@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swipio - Learn Words One Swipe At A Time</title>
+  <meta name="description" content="Swipio helps you build vocabulary with swipe-based flashcards, spaced repetition, and practical examples." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-orb orb-a"></div>
+  <div class="background-orb orb-b"></div>
+
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">Swipio</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-small" href="#download">Download</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Language Learning Flashcards</p>
+        <h1>Learn vocabulary the smart way, one swipe at a time.</h1>
+        <p class="lead">Swipe right when you know a word. Swipe left when you need practice. Swipio schedules reviews exactly when your memory needs them.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#download">Get the App</a>
+          <a class="ghost" href="#how">See how it works</a>
+        </div>
+        <ul class="metrics">
+          <li><strong>5+</strong><span>Context examples per word</span></li>
+          <li><strong>100%</strong><span>Swipe-first learning flow</span></li>
+          <li><strong>Daily</strong><span>Adaptive review schedule</span></li>
+        </ul>
+      </div>
+
+      <div class="phone-shell" aria-label="Interactive flashcard preview">
+        <div class="phone-notch"></div>
+        <div class="card-stack" id="cardStack"></div>
+        <p class="hint">Drag cards left/right or use buttons below</p>
+        <div class="controls">
+          <button id="leftBtn" aria-label="Need practice">Need practice</button>
+          <button id="rightBtn" aria-label="Know it">Know it</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container reveal">
+      <h2>Everything you need to remember words long-term</h2>
+      <div class="grid">
+        <article>
+          <h3>Swipe-based flashcards</h3>
+          <p>Fast and intuitive learning. Make progress in short sessions without mental overhead.</p>
+        </article>
+        <article>
+          <h3>Spaced repetition</h3>
+          <p>Words come back right before you forget them, helping memory retention without cramming.</p>
+        </article>
+        <article>
+          <h3>Example-rich context</h3>
+          <p>Each word includes practical sample sentences so you learn meaning and real usage together.</p>
+        </article>
+        <article>
+          <h3>Daily habit design</h3>
+          <p>Simple streak-based pacing encourages consistency without overwhelming your schedule.</p>
+        </article>
+        <article>
+          <h3>Clean progress tracking</h3>
+          <p>Track known, learning, and difficult cards with clear visuals and focused review sessions.</p>
+        </article>
+        <article>
+          <h3>Built for phones first</h3>
+          <p>Fluid mobile interactions with large touch targets and one-thumb navigation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="steps container reveal">
+      <h2>How Swipio works</h2>
+      <div class="step-list">
+        <article><span>1</span><h3>Learn</h3><p>Review a card with pronunciation, translation, and examples.</p></article>
+        <article><span>2</span><h3>Swipe</h3><p>Swipe right if you know it, left if you need more practice.</p></article>
+        <article><span>3</span><h3>Retain</h3><p>Get smartly timed reviews to lock vocabulary into long-term memory.</p></article>
+      </div>
+    </section>
+
+    <section class="testimonials container reveal">
+      <h2>Learners love the flow</h2>
+      <div class="quote-box">
+        <p id="quoteText">"I finally stuck with language practice because swiping feels effortless."</p>
+        <p id="quoteMeta">- Anna, beginner learner</p>
+      </div>
+      <div class="dots" id="quoteDots" aria-hidden="true"></div>
+    </section>
+
+    <section id="faq" class="faq container reveal">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>Is Swipio beginner-friendly?</summary>
+        <p>Yes. The app is designed for quick starts and short daily sessions, even if you are new to language study.</p>
+      </details>
+      <details>
+        <summary>How long should I study each day?</summary>
+        <p>Most users see progress with 10-15 minutes daily. Consistency matters more than session length.</p>
+      </details>
+      <details>
+        <summary>Does it support spaced repetition?</summary>
+        <p>Yes. Cards are resurfaced when your memory is likely to fade, improving retention over time.</p>
+      </details>
+      <details>
+        <summary>Can I learn on iPhone and iPad?</summary>
+        <p>Yes, the app is optimized for iPhone and works smoothly on iPad as well.</p>
+      </details>
+    </section>
+
+    <section id="download" class="download container reveal">
+      <h2>Build your language habit today</h2>
+      <p>Start learning words with the swipe-first system that keeps you coming back.</p>
+      <div class="badges">
+        <a href="#" aria-label="Download on the App Store">Download on App Store</a>
+        <a href="#" aria-label="Get it on Google Play">Get it on Google Play</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Swipio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
