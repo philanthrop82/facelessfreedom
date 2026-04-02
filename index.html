@@ -22,7 +22,8 @@
 <button class="plf-day-btn active" data-testid="day-btn-1">
 <div class="badge">
 </div>Video 1 </button>
-<button class="plf-day-btn" data-testid="day-btn-2">Video 2</button>
+<button class="plf-day-btn locked" data-testid="day-btn-2">Video 2 <span style=font-size:10px;margin-left:4px;opacity:0.5>🔒</span>
+</button>
 <button class="plf-day-btn locked" data-testid="day-btn-3">Video 3 <span style=font-size:10px;margin-left:4px;opacity:0.5>🔒</span>
 </button>
 <button class="plf-day-btn plf-finale-btn" data-testid="day-btn-finale">🏆 Finale</button>
@@ -58,13 +59,10 @@
 <span class="plf-registration-message" style=font-weight:500;color:var(--plf-text)>Angelika Schreiber hat sich gerade registriert.</span>
 </div>
 </div>
-<div style=position:relative;width:100%;aspect-ratio:16/9;background:rgb(17,17,17);overflow:hidden>
-<video playsinline preload="metadata" data-testid="plf-video" style=position:absolute;inset:0px;width:100%;height:100%;object-fit:cover controls poster="assets/plf-image-01.png">
-</video>
-<a href="https://swipio.b-cdn.net/PRE-VIDEO-2.mp4#t=120" target=_blank style=z-index:2147483647!important;position:absolute!important;top:8px!important;left:8px!important;width:16px!important;height:16px!important;min-width:16px!important;min-height:16px!important;max-width:16px!important;max-height:16px!important>
-<img src="assets/plf-image-02.png" style=width:16px!important;height:16px!important;min-width:16px!important;min-height:16px!important;max-width:16px!important;max-height:16px!important>
-</a>
-<div class="plf-video-day-label">📹 Tag 1 · Das System</div>
+<div style="padding: 56.25% 0 0 0; position: relative">
+<div style="height:100%;left:0;position:absolute;top:0;width:100%">
+<iframe height="100%" width="100%;" src="https://embed.wave.video/23EKuyazd9Ea4f5T" frameborder="0" allow="autoplay; fullscreen" scrolling="no"></iframe>
+</div>
 </div>
 <div style="padding:16px 14px;display:flex;flex-direction:column;align-items:center;gap:16px;background:var(--plf-canvas2);border-top:1px solid var(--plf-border)">
 <div style="display:flex;align-items:center;gap:10px;background:var(--plf-canvas3);border:1px solid var(--plf-border);border-radius:50px;padding:8px 14px 8px 8px;flex-wrap:wrap;justify-content:center">
