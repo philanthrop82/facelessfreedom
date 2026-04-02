@@ -210,6 +210,58 @@ to{
 .plf-toast{
   position:fixed; bottom:24px; right:24px; background:var(--plf-canvas2); border:1px solid rgba(22,163,74,.35); color:var(--plf-text); padding:14px 20px; border-radius:12px; font-size:14px; font-weight:600; z-index:2000; display:flex; align-items:center; gap:10px; box-shadow:0 4px 12px var(--plf-shadow),0 16px 40px var(--plf-shadow-md); transform:translateY(80px); opacity:0; transition:all .35s cubic-bezier(.34,1.56,.64,1)}
 
+.plf-modal{
+  position:fixed; inset:0; display:none; align-items:center; justify-content:center; z-index:2500;
+}
+
+.plf-modal.is-open{
+  display:flex;
+}
+
+.plf-modal__backdrop{
+  position:absolute; inset:0; background:rgba(15,23,42,0.65); backdrop-filter:blur(6px);
+}
+
+.plf-modal__card{
+  position:relative; background:var(--plf-canvas2); border-radius:22px; padding:32px 28px; width:100%; max-width:420px; box-shadow:0 20px 60px rgba(15,23,42,0.35); z-index:1;
+}
+
+.plf-modal__close{
+  position:absolute; top:12px; right:12px; width:36px; height:36px; border-radius:50%; border:1px solid var(--plf-border); background:#f8f5f0; font-size:20px; cursor:pointer;
+}
+
+.plf-modal__content{
+  text-align:center;
+}
+
+.plf-modal__icon{
+  font-size:40px; margin-bottom:12px;
+}
+
+.plf-modal__content h3{
+  font-size:26px; margin-bottom:8px;
+}
+
+.plf-modal__content p{
+  color:var(--plf-text-muted); margin-bottom:20px; line-height:1.5;
+}
+
+.plf-modal__form{
+  display:grid; gap:12px; margin-bottom:14px;
+}
+
+.plf-modal__form input{
+  width:100%; padding:14px 16px; border-radius:16px; border:1px solid var(--plf-border); background:#f8f5f0; font-size:16px;
+}
+
+.plf-modal__cta{
+  padding:14px 16px; border-radius:16px; border:none; background:linear-gradient(135deg,var(--plf-blue) 0%,var(--plf-blue-light) 100%); color:#fff; font-size:16px; font-weight:700; cursor:pointer; box-shadow:0 6px 18px #1a568e40;
+}
+
+.plf-modal__note{
+  font-size:12px; color:var(--plf-text-muted);
+}
+
 .plf-modal-close:hover{
   background:var(--plf-border)}
 

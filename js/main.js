@@ -60,12 +60,33 @@ window.setInterval(() => {
   }, 220);
 }, 3800);
 
+const modalEl = document.querySelector("[data-modal]");
+const modalCloseEls = document.querySelectorAll("[data-modal-close]");
+
+function openModal() {
+  if (!modalEl) return;
+  modalEl.classList.add("is-open");
+}
+
+function closeModal() {
+  if (!modalEl) return;
+  modalEl.classList.remove("is-open");
+}
+
 mainCtaEl?.addEventListener("click", () => {
-  showToast("✅ Super! Weiterleitung zum nächsten Schritt …");
+  openModal();
 });
 
 calculatorCtaEl?.addEventListener("click", () => {
-  showToast("🧮 Rechner wird geöffnet …");
+  openModal();
+});
+
+modalCloseEls.forEach((btn) => {
+  btn.addEventListener("click", closeModal);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeModal();
 });
 
 loadMoreEl?.addEventListener("click", () => {
