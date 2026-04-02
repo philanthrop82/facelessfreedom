@@ -89,6 +89,14 @@ to{
 .plf-hl-blue{
   background:linear-gradient(135deg,var(--plf-blue) 0%,var(--plf-blue-light) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text}
 
+.plf-underline{
+  position:relative; display:inline-block; color:inherit;
+}
+
+.plf-underline::after{
+  content:""; position:absolute; left:0; right:0; height:8px; bottom:-6px; background:linear-gradient(90deg, rgba(26,86,142,0.15), rgba(36,113,200,0.45)); border-radius:999px; z-index:-1;
+}
+
 .plf-social-btn:hover{
   transform:translateY(-1px); filter:brightness(.95)}
 
