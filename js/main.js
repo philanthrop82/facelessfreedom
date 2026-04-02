@@ -73,11 +73,17 @@ function closeModal() {
   modalEl.classList.remove("is-open");
 }
 
+const finaleBtn = document.querySelector('[data-testid="day-btn-finale"]');
+
 mainCtaEl?.addEventListener("click", () => {
   openModal();
 });
 
 calculatorCtaEl?.addEventListener("click", () => {
+  openModal();
+});
+
+finaleBtn?.addEventListener("click", () => {
   openModal();
 });
 
